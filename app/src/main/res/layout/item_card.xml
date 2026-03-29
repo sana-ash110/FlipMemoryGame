@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp">
+
+    <!-- ── Back face (face-down) ───────────────────────────────────────── -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/card_back_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="?"
+            android:textColor="@color/card_back_symbol"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- ── Front face (face-up) ────────────────────────────────────────── -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardFront"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/card_front_bg">
+
+        <TextView
+            android:id="@+id/tvSymbol"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="🐶"
+            android:textSize="28sp"
+            android:gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

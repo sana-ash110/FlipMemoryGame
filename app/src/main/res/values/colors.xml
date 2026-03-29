@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_dark">#0F0F1A</color>
+    <color name="bg_card">#1A1A2E</color>
+    <color name="divider">#2A2A45</color>
+    <color name="card_back_bg">#1E2A4A</color>
+    <color name="card_back_symbol">#4A6FA5</color>
+    <color name="card_front_bg">#252540</color>
+    <color name="matched_card_bg">#1A3A2A</color>
+    <color name="text_primary">#E8E8F0</color>
+    <color name="text_secondary">#8888AA</color>
+    <color name="accent_gold">#FFD700</color>
+    <color name="accent_cyan">#00D4FF</color>
+    <color name="level_beginner">#4CAF50</color>
+    <color name="level_intermediate">#FF9800</color>
+    <color name="level_advanced">#F44336</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

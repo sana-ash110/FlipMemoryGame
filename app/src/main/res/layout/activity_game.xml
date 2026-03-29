@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark">
+
+    <!-- ── Header ──────────────────────────────────────────────────────── -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/bg_card"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="14dp"
+        android:elevation="4dp">
+
+        <!-- Level name -->
+        <TextView
+            android:id="@+id/tvLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🌱 Beginner (4×4)"
+            android:textColor="@color/accent_gold"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Stats row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Moves -->
+            <TextView
+                android:id="@+id/tvMoves"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Moves: 0"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+            <!-- Separator -->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="24dp"
+                android:background="@color/divider"/>
+
+            <!-- Timer -->
+            <TextView
+                android:id="@+id/tvTimer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="⏱ 00:00"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- ── Card grid ───────────────────────────────────────────────────── -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="none"/>
+
+    <!-- ── Restart button ──────────────────────────────────────────────── -->
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="🔄  Restart"
+        android:textColor="@color/bg_dark"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/accent_gold"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
